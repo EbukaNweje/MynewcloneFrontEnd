@@ -33,9 +33,9 @@ function SignUp({Display}) {
   },[])
 
     const Data = {firstName, lastName,referenceid, password, gender,phoneNumber,email}
-    const url = "https://availtrade-back-endnew.vercel.app/api/register"
+    const url = "https://ef-work-back-end.vercel.app/api/register"
 
-    const urll = "https://availtrade-backendnew.onrender.com/api/signupemailsand"
+    const urll = "https://efworkbackend.onrender.com/api/signupemailsand"
     
     const signupemailsand = () => {
       Axios.post(urll, {email})
@@ -58,7 +58,7 @@ function SignUp({Display}) {
         setMessage({ error: true, msg: res.data.message });
         // const id =JSON.parse(localStorage.getItem("User") )
         // console.log(id, "this is the id of the user")
-        window.location.href = `https://accountPremium-Crypt.vercel.app/#/${res.data.data._id}`
+        window.location.href = `https://accountpremium-crypt.vercel.app/#/${res.data.data._id}`
         // setTimeout(() => {
         //   // navigate(`/dashboard/${id.data._id}`)
         // }, [2000]);

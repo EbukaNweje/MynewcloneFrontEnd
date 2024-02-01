@@ -29,10 +29,10 @@ const Login = ({ Display }) => {
  */
   console.log(message)
 
-  const url = "https://availtrade-back-endnew.vercel.app/api/login"
+  const url = "https://ef-work-back-end.vercel.app/api/login"
   const Data = {email, password}
 
-  const urll = "https://availtrade-backendnew.onrender.com/api/loginemail"
+  const urll = "https://efworkbackend.onrender.com/api/loginemail"
 
   const loginemail = () => {
     Axios.post(urll, {email})
@@ -58,7 +58,7 @@ const Login = ({ Display }) => {
       setMessage({ error: true, msg: "successfully!" });
       const id = JSON.parse(localStorage.getItem("User"))
       setTimeout(() => {
-        window.location.href = `https://accountPremium-Crypt.vercel.app/#/${id._id}`
+        window.location.href = `https://accountpremium-crypt.vercel.app/#/${id._id}`
         // navigate(`/dashboard/${id._id}`) 
       console.log(id._id)
       }, [2000]);
