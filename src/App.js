@@ -28,7 +28,7 @@ import DashboardContactUs from './components/Dashboard/DashboardContactUs';
 import DashboardPrivacy from './components/Dashboard/DashboardPrivacy';
 import Teams from './components/TeamCondition/Contact';
 import Update from "./components/Dashboard/UpdateUser"
-import Scam from './components/GooleScame.js/Scame';
+// import Scam from './components/GooleScame.js/Scame';
 
 function App() {
 const [display, setDisplay] = useState(true)
@@ -38,9 +38,9 @@ const [display, setDisplay] = useState(true)
 
   return (
       <HashRouter>
-        {/* {display? <Header/> : null}  */}
+        {display? <Header/> : null} 
         <Routes>
-        <Route path="/" element={<Scam changeDisplay = {changeToggle}/>}/>
+        <Route path="/" element={<LandingPage changeDisplay = {changeToggle}/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/affiliate" element={<AffiliatePage/>}/>
         <Route path="/trading" element={<TradingPage/>}/>
